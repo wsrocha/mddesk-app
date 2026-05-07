@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MD Desk — Portable Markdown Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="nav-logo-icon">◈</span>
+        MD Desk
+      </a>
+      <div class="nav-links">
+        <a href="#features">Funcionalidades</a>
+        <a href="#how">Como funciona</a>
+        <a href="#feedback">Feedback</a>
+        <a href="https://github.com/linorrocha" target="_blank" rel="noopener" class="nav-cta">
+          Download
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        100% offline · zero instalação · open source
+      </div>
+
+      <h1 class="hero-title">
+        Suas notas.<br />
+        <span class="gradient-text">Seu controle.</span><br />
+        Sempre.
+      </h1>
+
+      <p class="hero-subtitle">
+        Editor Markdown desktop para Windows. Portable, local-first e sem fricção.
+        Escreva em Markdown ou use a toolbar — suas notas ficam como arquivos
+        <code>.md</code> no seu computador.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://github.com/linorrocha" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          Download no GitHub
+        </a>
+        <a href="#features" class="btn btn-ghost">
+          Ver funcionalidades
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">~9MB</span>
+          <span class="stat-label">Tamanho</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">0</span>
+          <span class="stat-label">Dependências externas</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">100%</span>
+          <span class="stat-label">Offline</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Editor mockup -->
+    <div class="hero-mockup">
+      <div class="mockup-window">
+        <div class="mockup-titlebar">
+          <div class="mockup-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="mockup-title">Minha primeira nota — MD Desk</span>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-sidebar">
+            <div class="mockup-search">🔍 Buscar notas…</div>
+            <div class="mockup-note active">
+              <span class="pin">📌</span>
+              <div>
+                <div class="note-title">Minha primeira nota</div>
+                <div class="note-preview">Agora mesmo</div>
+              </div>
+            </div>
+            <div class="mockup-note">
+              <div>
+                <div class="note-title">Ideias de projeto</div>
+                <div class="note-preview">Ontem · #ideia</div>
+              </div>
+            </div>
+            <div class="mockup-note">
+              <div>
+                <div class="note-title">Reunião semanal</div>
+                <div class="note-preview">3d atrás · #trabalho</div>
+              </div>
+            </div>
+            <div class="mockup-tag"># ideia</div>
+            <div class="mockup-tag"># trabalho</div>
+          </div>
+          <div class="mockup-editor">
+            <div class="mockup-toolbar">
+              <span>H1</span><span>H2</span><span>B</span><span><em>I</em></span>
+              <span>`</span><span>🔗</span><span>≡</span><span>☑</span>
+              <span class="toolbar-sep"></span>
+              <span class="toolbar-active">⬛</span>
+            </div>
+            <div class="mockup-content">
+              <div class="mc-h1"># Minha primeira nota</div>
+              <div class="mc-p">Bem-vindo ao <strong>MD Desk</strong>! Escreva em Markdown ou use a toolbar acima.</div>
+              <div class="mc-p">Você pode usar <code>`código inline`</code> e muito mais.</div>
+              <div class="mc-list">- [x] Criar minha primeira nota</div>
+              <div class="mc-list">- [ ] Explorar as funcionalidades</div>
+              <div class="mc-list">- [ ] Usar <span class="mc-tag">#tags</span> para organizar</div>
+              <div class="mc-cursor">|</div>
+            </div>
+          </div>
+          <div class="mockup-preview">
+            <div class="mp-h1">Minha primeira nota</div>
+            <p>Bem-vindo ao <strong>MD Desk</strong>! Escreva em Markdown ou use a toolbar acima.</p>
+            <p>Você pode usar <code>código inline</code> e muito mais.</p>
+            <ul>
+              <li>✅ Criar minha primeira nota</li>
+              <li>☐ Explorar as funcionalidades</li>
+              <li>☐ Usar <span class="mp-tag">#tags</span> para organizar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ──────────────────────────────────────────────────────────── -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label">Funcionalidades</div>
+      <h2 class="section-title">Tudo que você precisa.<br /><span class="gradient-text">Nada que você não precisa.</span></h2>
+      <p class="section-sub">Projetado para ser simples, rápido e completamente seu.</p>
+
+      <div class="features-grid">
+
+        <div class="feature-card feature-card--large">
+          <div class="feature-icon">✍️</div>
+          <h3>Editor híbrido WYSIWYG</h3>
+          <p>Escreva Markdown puro ou use a toolbar. O editor entende os dois — <code># Título</code> vira H1 automaticamente, <code>**negrito**</code> formata na hora.</p>
+          <div class="feature-demo">
+            <div class="fd-line"><span class="fd-md"># </span><span class="fd-h1">Título da nota</span></div>
+            <div class="fd-line"><span class="fd-md">**</span><span class="fd-bold">negrito</span><span class="fd-md">**</span> e <span class="fd-md">*</span><span class="fd-italic">itálico</span><span class="fd-md">*</span></div>
+            <div class="fd-line"><span class="fd-md">- [ ] </span><span>tarefa pendente</span></div>
+            <div class="fd-line"><span class="fd-md">- [x] </span><span class="fd-done">tarefa concluída</span></div>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💾</div>
+          <h3>Auto-save</h3>
+          <p>Salva automaticamente enquanto você digita. Sem botão salvar, sem perder nada.</p>
+          <div class="feature-pill">600ms debounce</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📁</div>
+          <h3>Arquivos abertos</h3>
+          <p>Cada nota é um arquivo <code>.md</code> real no seu disco. Abra com qualquer editor, faça backup, use no Git.</p>
+          <div class="feature-pill">Zero lock-in</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3>Busca full-text</h3>
+          <p>Encontre qualquer coisa em todas as suas notas em tempo real.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">#</div>
+          <h3>Tags via hashtag</h3>
+          <p>Use <code>#projeto</code> no texto e a tag aparece automaticamente na sidebar para filtrar.</p>
+        </div>
+
+        <div class="feature-card feature-card--large">
+          <div class="feature-icon">🎨</div>
+          <h3>Temas e cores</h3>
+          <p>Dark e Light mode com 7 accent colors. Tudo persistido localmente.</p>
+          <div class="accent-swatches">
+            <span style="background:#1e40af" title="Azul escuro"></span>
+            <span style="background:#7c3aed" title="Roxo"></span>
+            <span style="background:#65a30d" title="Verde limão"></span>
+            <span style="background:#0284c7" title="Azul claro"></span>
+            <span style="background:#db2777" title="Rosa"></span>
+            <span style="background:#0d9488" title="Verde água"></span>
+            <span style="background:#525252" title="Mono"></span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📌</div>
+          <h3>Fixar notas</h3>
+          <p>Notas importantes sempre no topo da sidebar.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🕐</div>
+          <h3>Histórico automático</h3>
+          <p>Últimas 10 versões de cada nota salvas automaticamente em <code>/history</code>.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>Links internos</h3>
+          <p>Use <code>[[nome-da-nota]]</code> para navegar entre notas ou criar novas automaticamente.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ───────────────────────────────────────────────────────── -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-label">Como funciona</div>
+      <h2 class="section-title">Simples como deve ser.</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Baixe o executável</h3>
+            <p>Um único arquivo <code>.exe</code> de ~9MB. Sem instalação, sem dependências, sem admin.</p>
+          </div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Execute de qualquer lugar</h3>
+            <p>Coloque num pendrive, numa pasta, onde quiser. O app cria a pasta <code>/notes</code> ao lado do executável.</p>
+          </div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Comece a escrever</h3>
+            <p>Crie sua primeira nota em segundos. Tudo salvo automaticamente como arquivos <code>.md</code>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="structure-box">
+        <div class="structure-label">Estrutura de arquivos em runtime</div>
+        <pre class="structure-code"><span class="sc-dir">📁 qualquer-pasta/</span>
+  <span class="sc-exe">▶ mddesk.exe</span>          <span class="sc-comment">← só isso para rodar</span>
+  <span class="sc-dir">📁 notes/</span>
+    <span class="sc-file">📄 minha-nota.md</span>
+    <span class="sc-file">📄 ideias-de-projeto.md</span>
+  <span class="sc-file">⚙ config.json</span>         <span class="sc-comment">← preferências</span>
+  <span class="sc-dir">📁 history/</span>             <span class="sc-comment">← snapshots automáticos</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ATALHOS ────────────────────────────────────────────────────────────── -->
+  <section class="shortcuts">
+    <div class="container">
+      <div class="section-label">Atalhos de teclado</div>
+      <h2 class="section-title">Fluxo sem fricção.</h2>
+      <div class="shortcuts-grid">
+        <div class="shortcut"><kbd>Ctrl</kbd>+<kbd>N</kbd><span>Nova nota</span></div>
+        <div class="shortcut"><kbd>Ctrl</kbd>+<kbd>B</kbd><span>Negrito</span></div>
+        <div class="shortcut"><kbd>Ctrl</kbd>+<kbd>I</kbd><span>Itálico</span></div>
+        <div class="shortcut"><kbd>Ctrl</kbd>+<kbd>Z</kbd><span>Desfazer</span></div>
+        <div class="shortcut"><kbd>Ctrl</kbd>+<kbd>Y</kbd><span>Refazer</span></div>
+        <div class="shortcut"><kbd>Ctrl</kbd>+<kbd>,</kbd><span>Configurações</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEEDBACK ──────────────────────────────────────────────────────────── -->
+  <section class="feedback" id="feedback">
+    <div class="container">
+      <div class="feedback-inner">
+        <div class="feedback-left">
+          <div class="section-label">Feedback</div>
+          <h2 class="section-title">O que você acha?</h2>
+          <p>MD Desk está em desenvolvimento ativo. Sua opinião ajuda a moldar o produto. Mande uma mensagem no LinkedIn — respondo todos.</p>
+          <a href="https://linkedin.com/in/linorrocha" target="_blank" rel="noopener" class="btn btn-primary btn-linkedin">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            Enviar feedback no LinkedIn
+          </a>
+        </div>
+
+        <div class="feedback-right">
+          <div class="feedback-card">
+            <div class="feedback-card-header">
+              <div class="feedback-avatar">LR</div>
+              <div>
+                <div class="feedback-name">Linor Rocha</div>
+                <div class="feedback-role">Criador do MD Desk</div>
+              </div>
+            </div>
+            <p class="feedback-quote">"Construí o MD Desk porque queria um editor de notas que fosse meu — sem cloud, sem assinatura, sem complicação. Se você usa e tem algo a dizer, quero ouvir."</p>
+            <div class="feedback-topics">
+              <span>Bugs</span>
+              <span>Sugestões</span>
+              <span>Novas features</span>
+              <span>Parceria</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA FINAL ─────────────────────────────────────────────────────────── -->
+  <section class="cta-final">
+    <div class="cta-glow"></div>
+    <div class="container cta-content">
+      <h2>Pronto para escrever<br /><span class="gradient-text">sem distrações?</span></h2>
+      <p>Baixe agora. Sem cadastro, sem cartão, sem instalação.</p>
+      <a href="https://github.com/linorrocha" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        Download grátis no GitHub
+      </a>
+      <div class="cta-note">Windows 10/11 · ~9MB · Portable</div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="nav-logo-icon">◈</span> MD Desk
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/linorrocha" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/linorrocha" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="footer-copy">Feito com ♥ por Linor Rocha</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
